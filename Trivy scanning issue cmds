@@ -1,0 +1,11 @@
+5. Best Permanent Fix (Recommended)
+
+Create larger directory:
+
+sudo mkdir -p /opt/trivy-tmp
+sudo chmod 777 /opt/trivy-tmp
+export TMPDIR=/opt/trivy-tmp
+
+Run scan again:
+
+trivy image your-image:latest
